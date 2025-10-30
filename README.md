@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hi, I'm Prince 👋
 
-<!--
-**prince725/prince725** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🌱 I build automation for Swiggy Instamart, Blinkit, Amazon Ads & Zepto 
 
-Here are some ideas to get you started:
+🧠 Passion: Backend, API's, Ads ML, automation, NLP 
+💻 Tools: Python, Playwright, PostgreSQL, AWS, Transformers 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔗 Connect with me
+- LinkedIn: https://www.linkedin.com/in/prince-jaiswal-9b782a190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+- Portfolio: ...
+
+### ⚙️ Technologies & Tools
+Python | Node.js | Playwright | PostgreSQL | AWS | Docker | Redis | TypeScript | RESTAPI | MongoDb | FASTAPI 
+
+### 🚀 Current Projects
+- Swiggy Instamart automation engine
+- Blinkit campaign automation
+- Multi-platform Ads data pipeline
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true)
