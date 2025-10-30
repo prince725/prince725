@@ -17,6 +17,10 @@ Python | Node.js | Playwright | PostgreSQL | AWS | Docker | Redis | TypeScript |
 - Blinkit campaign automation
 - Multi-platform Ads data pipeline
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=prince725&count_private=true&show_icons=true)
+### 📈 GitHub Stats
+
+![Stats](https://github-readme-stats.vercel.app/api?username=prince725&count_private=true&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=prince725&layout=compact&theme=tokyonight)
 
 
