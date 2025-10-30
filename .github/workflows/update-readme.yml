@@ -29,7 +29,7 @@ jobs:
           echo "" >> README.md
           echo "🚀 Automation Engineer | Swiggy | Blinkit | Zepto | Amazon Ads" >> README.md
           echo "" >> README.md
-          echo "### 📊 GitHub Stats" >> README.md
+          echo "### 📊 GitHub Stats(last 12 hours)" >> README.md
 
           STATS_URL="https://github-readme-stats.vercel.app/api?username=$USERNAME&count_private=true&include_all_commits=true&show_icons=true&theme=tokyonight&hide_border=true"
           LANG_URL="https://github-readme-stats.vercel.app/api/top-langs/?username=$USERNAME&layout=compact&theme=tokyonight&hide_border=true"
