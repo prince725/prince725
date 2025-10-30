@@ -19,7 +19,8 @@ Python | Node.js | Playwright | PostgreSQL | AWS | Docker | Redis | TypeScript |
 
 ### 📈 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=prince725&count_private=true&show_icons=true&theme=tokyonight)
+![Stats](https://github-readme-stats.vercel.app/api?username=prince725&count_private=true&show_icons=true&include_all_commits=true&hide_rank=false&custom_title=Prince%20Jaiswal%27s%20GitHub%20Stats&token=${{ secrets.GH_TOKEN }})
+
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=prince725&layout=compact&theme=tokyonight)
 
