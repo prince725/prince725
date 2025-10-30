@@ -19,34 +19,33 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Authenticate GH API for private stats
+        run: |
+          curl -H "Authorization: token $GH_TOKEN" https://api.github.com/user > /dev/null
+
       - name: Generate README content
         run: |
           echo "### Hi, I'm Prince 👋" > README.md
           echo "" >> README.md
-          echo "🚀 I build automation for Swiggy Instamart, Blinkit, Zepto & Amazon Ads" >> README.md
-          echo "🧠 Passion: Ads Automation | Python | Playwright | ML | Cloud | Data" >> README.md
+          echo "🚀 Automation Engineer | Swiggy | Blinkit | Zepto | Amazon Ads" >> README.md
           echo "" >> README.md
-          echo "### 🔗 Connect" >> README.md
-          echo "- LinkedIn: https://www.linkedin.com/in/prince-jaiswal-9b782a190/" >> README.md
+          echo "### 📊 GitHub Stats" >> README.md
+
+          STATS_URL="https://github-readme-stats.vercel.app/api?username=$USERNAME&count_private=true&include_all_commits=true&show_icons=true&theme=tokyonight&hide_border=true"
+          LANG_URL="https://github-readme-stats.vercel.app/api/top-langs/?username=$USERNAME&layout=compact&theme=tokyonight&hide_border=true"
+
+          echo "![]($STATS_URL)" >> README.md
           echo "" >> README.md
-          echo "### 🛠️ Tech Stack" >> README.md
-          echo "Python | Node.js | Playwright | PostgreSQL | Supabase | Redis | AWS | FastAPI | TypeScript" >> README.md
+          echo "![]($LANG_URL)" >> README.md
           echo "" >> README.md
-          echo "### 📈 GitHub Stats" >> README.md
-          STATS_URL="https://github-readme-stats.vercel.app/api?username=$USERNAME&count_private=true&include_all_commits=true&show_icons=true&theme=tokyonight&hide_border=true&token=$GH_TOKEN"
-          LANG_URL="https://github-readme-stats.vercel.app/api/top-langs/?username=$USERNAME&layout=compact&theme=tokyonight&hide_border=true&token=$GH_TOKEN"
-          
-          echo "![]( $STATS_URL )" >> README.md
-          echo "" >> README.md
-          echo "![]( $LANG_URL )" >> README.md
-          echo "" >> README.md
-          echo "> ⏱️ Auto-generated every 12 hours" >> README.md
+          echo "> Auto-updated every 12 hours ⚡" >> README.md
 
       - name: Commit & Push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add README.md
-          git commit -m "auto: update profile README" || echo "No changes"
-          git push https://$USERNAME:$GH_TOKEN@github.com/$USERNAME/$USERNAME.git
-
+          git commit -m "auto: update profile README" || exit 0
+          git push https://$USERNAME:$GH_TOKEN@github.com/$USERNAME/$USERNAME.git HEAD:main
